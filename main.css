@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: 'Days One', sans-serif;
+    font-family: 'Dela Gothic One', cursive;
     color: whitesmoke;
 }
 
 body {
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(10, 10, 10);
 }
 
 header {
@@ -24,27 +28,22 @@ a {
     text-decoration: none;
 }
 
-#logo {
-    height: 3.5vh;
-    position: fixed;
-    margin: 1rem;
-    z-index: 4;
-}
 
 .background {
     position: fixed;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    visibility: hidden;
     opacity: 0;
 }
 
 .title {
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     top: 10vh;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
 }
 
 .projects-layer{
@@ -55,26 +54,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 5rem;
+    font-size: 10rem;
     padding: 10rem 0;
     text-transform: uppercase;
 }
 
 .project-item {
-    opacity: 2%;
-    transition: opacity 1s ease;
-    padding: 5rem 0;
+    opacity: 10%;
+    transition: opacity 1.5s ease;
+    padding: 0rem;
 }
 
 .project-item:hover {
     opacity: 100%;
     cursor: pointer;
-}
-
-.fade-background {
-    animation-name: fadeIn;
-    animation-duration: 4s;
-    animation-iteration-count:infinite;  
 }
 
 footer {
@@ -83,13 +76,28 @@ footer {
     width: 100%;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+#cacti_bg {
+    visibility: hidden;
 }
 
+#stussy_bg {
+    visibility: hidden;
+}
+
+#ballastpt_bg {
+    visibility: hidden;
+}
+
+#wedding_bg {
+    visibility: hidden;
+}
+
+#br8s_bg {
+    visibility: hidden;
+}
+
+.opacity-effect {
+    transition: opacity 2s ease-in-out;
+    opacity: 100%;
+}
 
