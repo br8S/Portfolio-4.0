@@ -6,57 +6,28 @@
     color: whitesmoke;
 }
 
+body {
+    background-color: rgb(9, 9, 9);
+}
+
 header {
     height: 100vh;
     width: 100%;
-    background-image: url("images/ernest-brillo-Re-_rHb9-f4-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
-    background-color: rgb(9, 9, 9);
-    filter: grayscale(100%);
 }
 
-.projects {
-    width: 100%;
-    background-color: rgb(9, 9, 9);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-items {
+.projects-layer{
+    top: 0;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    text-align: center;
-}
-
-.links {
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    height: 3vh;
+    font-size: 8rem;
+    padding: 20rem 0;
 }
 
-.project-img {
-    object-fit: contain;
+.project-item {
+    margin: 5rem 0;
 }
-
-.project-link {
-    height: 3vh;
-    margin: 0 1rem;
-}
-
-.project-repo {
-    height: 3vh;
-    margin: 0 1rem;
-}
-
 
 
