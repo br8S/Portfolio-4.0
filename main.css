@@ -25,9 +25,19 @@ a {
 }
 
 #logo {
-    height: 4vh;
+    height: 3.5vh;
     position: fixed;
     margin: 1rem;
+    z-index: 4;
+}
+
+.background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .title {
@@ -45,16 +55,15 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 8rem;
+    font-size: 5rem;
     padding: 10rem 0;
     text-transform: uppercase;
 }
 
 .project-item {
-    margin: 5rem 0;
-    opacity: 10%;
+    opacity: 2%;
     transition: opacity 1s ease;
-
+    padding: 5rem 0;
 }
 
 .project-item:hover {
@@ -62,5 +71,25 @@ a {
     cursor: pointer;
 }
 
+.fade-background {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;  
+}
+
+footer {
+    background-color: blue;
+    height: 8vh;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
