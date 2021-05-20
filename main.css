@@ -13,9 +13,32 @@ body {
 header {
     height: 100vh;
     width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    height: 4vh;
+    position: fixed;
+    margin: 1rem;
+}
+
+.title {
+    position: relative;
+    top: 10vh;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .projects-layer{
+    position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
@@ -23,11 +46,21 @@ header {
     flex-direction: column;
     align-items: center;
     font-size: 8rem;
-    padding: 20rem 0;
+    padding: 10rem 0;
+    text-transform: uppercase;
 }
 
 .project-item {
     margin: 5rem 0;
+    opacity: 10%;
+    transition: opacity 1s ease;
+
 }
+
+.project-item:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
 
 
