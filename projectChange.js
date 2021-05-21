@@ -1,6 +1,7 @@
 document.querySelector('#project_1').addEventListener("mouseenter", () => {
     document.querySelector('#cacti_bg').style.visibility = "visible";
     document.querySelector('#cacti_bg').classList.add("opacity-effect");
+    console.log(document.querySelector('#cacti_bg').style.opacity)
 })
 
 document.querySelector('#project_1').addEventListener("mouseleave", () => {
