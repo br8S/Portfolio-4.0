@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATA</title>
-    <link rel="icon" href="images/smile.png">
+    <link rel="icon" href="images/MATA_LOGO.png">
     <link rel="stylesheet" href="main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
@@ -13,22 +13,34 @@
 </head>
 <body>
     <div class="wrapper"></div>
-    <header>
+    <img id="logo" src="images/MATA_LOGO.png">
+    <header id="header">
         <img class="background" id="cacti_bg" src="images/cacti.gif">
         <img class="background" id="stussy_bg" src="images/stussy.gif">
         <img class="background" id="ballastpt_bg" src="images/ballastpt.gif">
         <img class="background" id="wedding_bg" src="images/waves.gif">
         <img class="background" id="br8s_bg" src="images/br8s.gif">
-        <h4 class="title">MY PROJECTS</h4>
+
+        <h4 class="title">PROJECTS</h4>
         <div class="projects-layer">
             <div class="project-item" id="project_1"><a href="https://cacti-br8s-dev.herokuapp.com/">cacti</a></div>
-            <div class="project-item" id="project_2">stussy</div>
-            <div class="project-item" id="project_3">ballast</div>
-            <div class="project-item" id="project_4">sanchez</div>
-            <div class="project-item" id="project_5">br8$</div>
+            <div class="project-item" id="project_2"><a href="https://br8s.github.io/Stussy-Landing-Page/">stussy</a></div>
+            <div class="project-item" id="project_3"><a href="https://serene-chandrasekhar-436e23.netlify.app">ballast</a></div>
+            <div class="project-item" id="project_4"><a href="https://sanchezryndwedding.com/">sanchez</a></div>
+            <div class="project-item" id="project_5"><a href="https://br8s-threejs.herokuapp.com/">br8$</a></div>
+        </div>
+
+        <div id="about_layer">
+            <h2 class="about-text"> I have a passion for creating animated and interactive websites and am constantly on the look for new creative endeavors. I mainly gravitate towards frontend development, usually working with GSAP, Threejs, HTML5 and CSS3. I enjoy trying to create unique and interesting websites that will provide users with memorable user experiences. </h2>
+            <h2 class="about-text"> I can help you build your website from scratch or just add some cool ui effects using GSAp, Threejs or just plain Javascript.</h2>
+            <h2 class="about-text"> Don't be shy, feel free to reach out!</h2>
+            <img class="social-link" src="images/github.png">
+            <img class="social-link" src="images/linkedin.png">
         </div>
     </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="loadAnime.js"></script>
+    <script src="logoHover.js"></script>
     <script src="projectChange.js"></script>
 </body>
 </html>
