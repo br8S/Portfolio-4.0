@@ -41,11 +41,14 @@ header {
 #about_layer {
     background-color: rgb(10, 10, 10);
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 4;
     top: 0;
     height: 100vh;
-    width: 60%;
-    padding: 15% 10%;
+    width: 60rem;
+    padding: 0% 10%;
     transform: translate(-1000px, 0px);
 }
 
@@ -56,7 +59,20 @@ header {
     color: rgb(209, 209, 209);
     text-transform: uppercase;
     line-height: 1.1rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
+}
+
+#socials_layer {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link {
+    height: 3vh;
+    width: 3vh;
+    margin: 1rem 0;
+    opacity: 10%;
 }
 
 a {
@@ -137,6 +153,12 @@ footer {
 
 #br8s_bg {
     visibility: hidden;
+}
+
+@media screen and (max-width: 1320px) {
+    #about_layer{
+        width: 50rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
