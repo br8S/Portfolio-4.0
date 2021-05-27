@@ -141,7 +141,7 @@ document.querySelector("#exit_button").addEventListener("click", () => {
     
         gsap.to("#about_layer", {
             x: -2000,
-            duration: 2,
+            duration: 2, 
             delay: 1
         })
     }
