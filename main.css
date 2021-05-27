@@ -15,10 +15,6 @@ body {
     background-color: rgb(10, 10, 10);
 }
 
-html, body {
-    overflow-x: hidden;
-}
-
 header {
     height: 100vh;
     width: 100%;
@@ -145,9 +141,9 @@ a {
 }
 
 .projects-layer{
+    overflow-x: hidden;
     position: absolute;
     top: 0;
-    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -222,7 +218,7 @@ footer {
 
 @media screen and (max-width: 650px) {
     .projects-layer{
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
 
     .project-item {
