@@ -19,44 +19,84 @@ document.querySelector("#logo").addEventListener("mouseleave", () => {
 
 /* LOGO ON CLICK EVENT */
 document.querySelector("#logo").addEventListener("click", () => {
-    gsap.to("#transition_layer", {
-        x: 2000,
-        duration: 2
-    })
+    if(window.innerWidth < 650) {
+        gsap.to("#transition_layer", {
+            x: 2000,
+            duration: 4
+        })
 
-    gsap.to("#about_layer", {
-        x: 0,
-        duration: 1
-    })
+        gsap.to("#about_layer", {
+            x: 0,
+            duration: 1.5
+        })
+
+        var delayCount = 2;
+        document.querySelectorAll(".about-text").forEach( (about) => {
+            delayCount += 0.2;
+            gsap.to(about, {
+                opacity: 1,
+                y: -10,
+                delay: delayCount
+            })
+        })
+
+        document.querySelectorAll(".social-link").forEach( (social) => {
+            delayCount += 0.2;
+            gsap.to(social, {
+                opacity: 0.2,
+                y: -10,
+                delay: delayCount
+            })
+        })
+
+        gsap.to('#exit_button', {
+            opacity: 0.2,
+            delay: 2.7
+        })
+    }
+
+    else {
+        console.log("2")
+        gsap.to("#transition_layer", {
+            x: 2000,
+            duration: 2
+        })
+
+        gsap.to("#about_layer", {
+            x: 0,
+            duration: 1
+        })
+
+        var delayCount = 1;
+        document.querySelectorAll(".about-text").forEach( (about) => {
+            delayCount += 0.2;
+            gsap.to(about, {
+                opacity: 1,
+                y: -10,
+                delay: delayCount
+            })
+        })
+
+        document.querySelectorAll(".social-link").forEach( (social) => {
+            delayCount += 0.2;
+            gsap.to(social, {
+                opacity: 0.2,
+                y: -10,
+                delay: delayCount
+            })
+        })
+
+        gsap.to('#exit_button', {
+            opacity: 0.2,
+            delay: 1.7
+        })
+    }
 
     gsap.to("#logo", {
         opacity: 0,
         autoAlpha: 0,
     })
 
-    var delayCount = 1;
-    document.querySelectorAll(".about-text").forEach( (about) => {
-        delayCount += 0.2;
-        gsap.to(about, {
-            opacity: 1,
-            y: -10,
-            delay: delayCount
-        })
-    })
-
-    document.querySelectorAll(".social-link").forEach( (social) => {
-        delayCount += 0.2;
-        gsap.to(social, {
-            opacity: 0.2,
-            y: -10,
-            delay: delayCount
-        })
-    })
-
-    gsap.to('#exit_button', {
-        opacity: 0.2,
-        delay: 1.7
-    })
 })
 
 /* EXIT BUTTON */
@@ -93,16 +133,31 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         delay: 0.5
     })
 
-    gsap.to("#transition_layer", {
-        x: -2500,
-        duration: 2
-    })
+    if(window.innerWidth < 650) {
+        gsap.to("#transition_layer", {
+            x: -2500,
+            duration: 4
+        })
+    
+        gsap.to("#about_layer", {
+            x: -2000,
+            duration: 2,
+            delay: 1
+        })
+    }
 
-    gsap.to("#about_layer", {
-        x: -2000,
-        duration: 1,
-        delay: 0.5
-    })
+    else {
+        gsap.to("#transition_layer", {
+            x: -2500,
+            duration: 2
+        })
+    
+        gsap.to("#about_layer", {
+            x: -2000,
+            duration: 1,
+            delay: 0.5
+        })
+    }
 })
 
 document.querySelectorAll(".social-link").forEach( (link) => {
