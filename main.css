@@ -189,14 +189,53 @@ footer {
     visibility: hidden;
 }
 
-@media screen and (max-width: 1320px) {
-    #about_layer{
-        width: 50rem;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     .projects-layer{
         font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .projects-layer{
+        font-size: 6rem;
+    }
+
+    .project-item {
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .projects-layer{
+        font-size: 4rem;
+    }
+
+    .project-item {
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .projects-layer{
+        font-size: 3rem;
+    }
+
+    .project-item {
+        padding: 2rem 0;
+    }
+
+    #logo {
+        z-index: 4;
+        height: 10vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 2rem;
+        opacity: 20%;
+    }
+
+    #about_content {
+        margin: 20vh 0 0 0;
+        padding: 0% 15%;
     }
 }
