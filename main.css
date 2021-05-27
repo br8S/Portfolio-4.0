@@ -12,6 +12,7 @@
 
 body {
     background-color: rgb(10, 10, 10);
+    overflow-x: hidden;
 }
 
 header {
@@ -217,7 +218,7 @@ footer {
 
 @media screen and (max-width: 650px) {
     .projects-layer{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .project-item {
@@ -237,5 +238,9 @@ footer {
     #about_content {
         margin: 20vh 0 0 0;
         padding: 0% 15%;
+    }
+
+    #logo {
+        height: 8vh;
     }
 }
