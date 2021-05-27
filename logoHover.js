@@ -19,9 +19,19 @@ document.querySelector("#logo").addEventListener("mouseleave", () => {
 
 /* LOGO ON CLICK EVENT */
 document.querySelector("#logo").addEventListener("click", () => {
-    gsap.to("#about_layer", {
+    gsap.to("#transition_layer", {
         x: 2000,
         duration: 2
+    })
+
+    gsap.to("#about_layer", {
+        x: 0,
+        duration: 1
+    })
+
+    gsap.to("#logo", {
+        opacity: 0,
+        autoAlpha: 0,
     })
 
     var delayCount = 1;
@@ -77,12 +87,19 @@ document.querySelector("#exit_button").addEventListener("click", () => {
 
     gsap.to("#logo", {
         x: 0,
+        opacity: 0.2,
+        autoAlpha: 1,
         duration: 1,
         delay: 0.5
     })
 
+    gsap.to("#transition_layer", {
+        x: -2500,
+        duration: 2
+    })
+
     gsap.to("#about_layer", {
-        x: -3000,
+        x: -2000,
         duration: 1,
         delay: 0.5
     })
