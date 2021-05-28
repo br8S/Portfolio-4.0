@@ -125,12 +125,60 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         opacity: 0,
     })
 
+    gsap.from("#project_1", {
+        duration: 2.2,
+        opacity: 0,
+        x: 300,
+        ease: Expo.easeInOut,
+        delay: 0.7
+    })
+
+    gsap.from("#project_2", {
+        duration: 2.2,
+        opacity: 0,
+        x: 300,
+        ease: Expo.easeInOut,
+        delay: 0.9
+    })
+
+    gsap.from("#project_3", {
+        duration: 2.2,
+        opacity: 0,
+        x: 300,
+        ease: Expo.easeInOut,
+        delay: 1.1
+    })
+
+    gsap.from("#project_4", {
+        duration: 2.2,
+        opacity: 0,
+        x: 300,
+        ease: Expo.easeInOut,
+        delay: 1.3
+    })
+
+    gsap.from("#project_5", {
+        duration: 2.2,
+        opacity: 0,
+        x: 300,
+        ease: Expo.easeInOut,
+        delay: 1.5
+    })
+
+    gsap.from(".title", {
+        duration: 2,
+        opacity: 0,
+        y: 10,
+        ease: Expo.easeInOut,
+        delay: 1.7
+    })
+
     gsap.to("#logo", {
         x: 0,
-        opacity: 0.2,
         autoAlpha: 1,
-        duration: 1,
-        delay: 0.5
+        opacity: 0.2,
+        duration: 2,
+        delay: 1.9
     })
 
     if(window.innerWidth < 650) {

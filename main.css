@@ -218,8 +218,7 @@ footer {
 
 @media screen and (max-width: 650px) {
     .projects-layer{
-        font-size: 3.2rem;
-        padding: 10rem 0 20rem 0;
+        font-size: 3.5rem;
     }
 
     .project-item {
