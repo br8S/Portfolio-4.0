@@ -58,7 +58,7 @@ header {
     background-size: cover;
     position: fixed;
     z-index: 7;
-    opacity: 4%;
+    opacity: 2%;
     pointer-events: none;
 }
 
