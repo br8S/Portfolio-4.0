@@ -94,7 +94,7 @@ document.querySelector("#logo").addEventListener("click", () => {
     }
 
     gsap.from(".title", {
-        duration: 1,
+        duration: 2,
         opacity: 0,
         y: 10,
         ease: Expo.easeInOut,

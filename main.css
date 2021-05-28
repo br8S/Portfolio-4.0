@@ -49,6 +49,19 @@ header {
     transform: translate(-2500px, 0px);
 }
 
+#grain_layer {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-image: url("images/pexels-saulo-zayas-246212.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    z-index: 7;
+    opacity: 4%;
+    pointer-events: none;
+}
+
 #about_layer {
     background-color: rgb(10, 10, 10);
     position: fixed;
@@ -81,7 +94,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 1rem;
+    margin: 2rem;
     height: 2vh;
     width: 2vh;
     background-image: url("images/cross.svg");
