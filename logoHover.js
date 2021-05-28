@@ -53,6 +53,7 @@ document.querySelector("#logo").addEventListener("click", () => {
             opacity: 0.2,
             delay: 2.7
         })
+
     }
 
     else {
@@ -92,9 +93,17 @@ document.querySelector("#logo").addEventListener("click", () => {
         })
     }
 
+    gsap.from(".title", {
+        duration: 1,
+        opacity: 0,
+        y: 10,
+        ease: Expo.easeInOut,
+        delay: 1.3
+    })
+
     gsap.to("#logo", {
         opacity: 0,
-        autoAlpha: 0,
+        autoAlpha: 0
     })
 
 })
@@ -103,12 +112,14 @@ document.querySelector("#logo").addEventListener("click", () => {
 document.querySelector("#exit_button").addEventListener("mouseenter", () => {
     gsap.to("#exit_button", {
         opacity: 1,
+        rotation: 90
     })
 })
 
 document.querySelector("#exit_button").addEventListener("mouseleave", () => {
     gsap.to("#exit_button", {
         opacity: 0.2,
+        rotation: 0
     })
 })
 
