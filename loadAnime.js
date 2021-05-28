@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
         duration: 4,
         y: -1000,
         ease: Expo.easeInOut,
-        delay: 0.6
+        delay: 0
     })
 
     gsap.from("#project_1", {
@@ -11,7 +11,7 @@ window.addEventListener('load', function() {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 1
+        delay: 0.4
     })
 
     gsap.from("#project_2", {
@@ -19,7 +19,7 @@ window.addEventListener('load', function() {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 1.2
+        delay: 0.6
     })
 
     gsap.from("#project_3", {
@@ -27,7 +27,7 @@ window.addEventListener('load', function() {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 1.4
+        delay: 0.8
     })
 
     gsap.from("#project_4", {
@@ -35,7 +35,7 @@ window.addEventListener('load', function() {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 1.6
+        delay: 1
     })
 
     gsap.from("#project_5", {
@@ -43,7 +43,7 @@ window.addEventListener('load', function() {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 1.8
+        delay: 1.2
     })
 
     gsap.from(".title", {
@@ -51,13 +51,13 @@ window.addEventListener('load', function() {
         opacity: 0,
         y: 10,
         ease: Expo.easeInOut,
-        delay: 3
+        delay: 1.4
     })
 
     gsap.from("#logo", {
         duration: 2,
         opacity: 0,
         ease: Expo.easeInOut,
-        delay: 3.4
+        delay: 1.6
     })
 })
