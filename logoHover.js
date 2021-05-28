@@ -141,7 +141,7 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 0.7
+        delay: 0.5
     })
 
     gsap.from("#project_2", {
@@ -149,7 +149,7 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 0.9
+        delay: 0.7
     })
 
     gsap.from("#project_3", {
@@ -157,7 +157,7 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 1.1
+        delay: 0.9
     })
 
     gsap.from("#project_4", {
@@ -165,7 +165,7 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 1.3
+        delay: 1.1
     })
 
     gsap.from("#project_5", {
@@ -173,7 +173,7 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         opacity: 0,
         x: 300,
         ease: Expo.easeInOut,
-        delay: 1.5
+        delay: 1.3
     })
 
     gsap.from(".title", {
@@ -181,7 +181,7 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         opacity: 0,
         y: 10,
         ease: Expo.easeInOut,
-        delay: 1.7
+        delay: 1.5
     })
 
     gsap.to("#logo", {
@@ -189,7 +189,7 @@ document.querySelector("#exit_button").addEventListener("click", () => {
         autoAlpha: 1,
         opacity: 0.2,
         duration: 2,
-        delay: 1.9
+        delay: 1.7
     })
 
     if(window.innerWidth < 650) {
